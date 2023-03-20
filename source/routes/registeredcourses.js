@@ -50,17 +50,18 @@ router.post("/", Auth, (req, res, next) => {
     });
 });
 
-router.get("/:regcourseID", (req, res, next) => {
-  const id = req.params.regcourseID;
-  if (id == "special") {
-    res.status(200).json({
-      message: " Handling special reg requests",
+router.get("/:courseID", (req, res, next) => {
+  const id = req.params.courseID;
+  RegCourse.findById(id)
+    .exec()
+    .then((doc) => {
+      console.log(doc);
+      res.status(200).json(doc);
+    })
+    .catch((err) => {
+      console.log(err);
+      res.status(500).json({ error: err });
     });
-  } else {
-    res.status(200).json({
-      message: `you passed reg ${id}`,
-    });
-  }
 });
 
 module.exports = router;
