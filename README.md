@@ -60,7 +60,7 @@ Without that token one can only get all the courses. So authentication is requir
           "courseID": "String eg(64176f65802c6483fa19abb9)"
       }
 
-##ERROR HANDLING
+## ERROR HANDLING
   * One cannot enter duplicate password for signup which aldready exist.
   * Only valid emails are allowed ( eg - tharunantgmail.com is not allowed).
   * While logging only the emails exist in the database ( created using signup ) can log in and get a token.
