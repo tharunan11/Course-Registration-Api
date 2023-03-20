@@ -71,7 +71,7 @@ Without that token one can only get all the courses. So authentication is requir
   * No duplicate course( with same ID) can be registered or created.
   
 ## Routes
-  *These routes are entered preceeded by localserver
+  * These routes are entered preceeded by localserver
   
     ->To get all the courses available                          : [GET]    - /allcourses/
     ->To Create a new course (Done only after autherization)    : [POST]   - /allcourses/
