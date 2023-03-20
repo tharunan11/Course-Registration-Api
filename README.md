@@ -41,24 +41,28 @@ Without that token one can only get all the courses. So authentication is requir
 ## Schemas
    User schema for authentication :
        This schema is used for authentication of users.
+     ```JSON
       {
       "email" : String eg("Tharunant@gmail.com"),
       "password" : String eg("password")
       }
-      
+     ```
    All courses Schema :
        In this schema one can find all the courses available for registration. 
+       ```JSON
       {
         "courseID": Number eg(103),
         "coursename": "String eg(discrete)",
         "instructor": "String eg(jaga)",
       },
-      
+      ```
    Registered Course Schema :
        Using this schema one can register the reqired course from ID of 'all courses Schema' using reference.
+       ```JSON
       {
           "courseID": "String eg(64176f65802c6483fa19abb9)"
       }
+      ```
 
 ## ERROR HANDLING
   * One cannot enter duplicate password for signup which aldready exist.
