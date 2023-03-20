@@ -43,8 +43,8 @@ Without that token one can only get all the courses. So authentication is requir
        This schema is used for authentication of users.
      ```JSON
       {
-      "email" : String eg("Tharunant@gmail.com"),
-      "password" : String eg("password")
+      "email" : "Tharunant@gmail.com",
+      "password" : "password"
       }
      ```
    All courses Schema :
