@@ -41,6 +41,11 @@ Without that token one can only get all the courses. So authentication is requir
 ## Schemas
    User schema for authentication :
        This schema is used for authentication of users.
+       ```json
+      "email" : "Tharunant@gmail.com",
+      "password" : "password"
+      ```
+
      ```JSON
       {
       "email" : "Tharunant@gmail.com",
