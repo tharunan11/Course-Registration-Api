@@ -41,7 +41,7 @@ Without that token one can only get all the courses. So authentication is requir
 ## Schemas
    User schema for authentication :
        This schema is used for authentication of users.
-     ```JSON
+     ```
       {
       "email" : "Tharunant@gmail.com",
       "password" : "password"
@@ -49,7 +49,7 @@ Without that token one can only get all the courses. So authentication is requir
      ```
    All courses Schema :
        In this schema one can find all the courses available for registration. 
-       ```JSON
+       ```
       {
         "courseID": Number eg(103),
         "coursename": "String eg(discrete)",
@@ -58,7 +58,7 @@ Without that token one can only get all the courses. So authentication is requir
       ```
    Registered Course Schema :
        Using this schema one can register the reqired course from ID of 'all courses Schema' using reference.
-       ```JSON
+       ```
       {
           "courseID": "String eg(64176f65802c6483fa19abb9)"
       }
