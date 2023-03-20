@@ -40,14 +40,14 @@ Without that token one can only get all the courses. So authentication is requir
 
 ## Schemas
    User schema for authentication :- 
-      -> This schema is used for authentication of users.
+       This schema is used for authentication of users.
       {
       "email" : String eg("Tharunant@gmail.com"),
       "password" : String eg("password")
       }
       
    All courses Schema :-
-      -> In this schema one can find all the courses available for registration. 
+       In this schema one can find all the courses available for registration. 
       {
         "courseID": Number eg(103),
         "coursename": "String eg(discrete)",
@@ -55,7 +55,7 @@ Without that token one can only get all the courses. So authentication is requir
       },
       
    Registered Course Schema :-
-      -> Using this schema one can register the reqired course from ID of 'all courses Schema' using reference.
+       Using this schema one can register the reqired course from ID of 'all courses Schema' using reference.
       {
           "courseID": "String eg(64176f65802c6483fa19abb9)"
       }
