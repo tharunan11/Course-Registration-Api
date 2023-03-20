@@ -39,14 +39,14 @@ They also cannot delete or update course. User can sign up using 'users/signup/ 
 Without that token one can only get all the courses. So authentication is required for sending post request.
 
 ## Schemas
-  * User schema for authentication :- 
+   User schema for authentication :- 
       -> This schema is used for authentication of users.
       {
       "email" : String eg("Tharunant@gmail.com"),
       "password" : String eg("password")
       }
       
-  * All courses Schema :-
+   All courses Schema :-
       -> In this schema one can find all the courses available for registration. 
       {
         "courseID": Number eg(103),
@@ -54,7 +54,7 @@ Without that token one can only get all the courses. So authentication is requir
         "instructor": "String eg(jaga)",
       },
       
-   * Registered Course Schema :-
+   Registered Course Schema :-
       -> Using this schema one can register the reqired course from ID of 'all courses Schema' using reference.
       {
           "courseID": "String eg(64176f65802c6483fa19abb9)"
